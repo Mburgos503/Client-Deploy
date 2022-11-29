@@ -40,9 +40,9 @@ export default class Registrar extends Component {
             .then((data)=> {
                 console.log(data, "userRegister");
                 if (data.status === "ok") {
-                    alert("Usuario creado con éxito, dirigete a Iniciar Sesión");
+                    alert("Usuario creado con éxito, dirigete a iniciar sesión");
                     window.localStorage.setItem("token", data.data);
-                    window.location.href = "./userDetails";
+                    window.location.href = "/log-in";
                   }
             });
 
