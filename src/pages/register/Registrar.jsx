@@ -21,7 +21,7 @@ export default class Registrar extends Component {
         e.preventDefault();
         const{fname, lname, email, password} = this.state;
         console.log(fname, lname, email, password);
-        fetch("http://localhost:3500/register", {
+        fetch("https://api-deploy-production.up.railway.app/register", {
             method: "POST",
             crossDomain: true,
             headers:{

@@ -16,7 +16,7 @@ export default class LogIn extends Component  {
         e.preventDefault();
         const { email, password } = this.state;
         console.log(email, password);
-        fetch("http://localhost:3500/login-user", {
+        fetch("https://api-deploy-production.up.railway.app/login-user", {
           method: "POST",
           crossDomain: true,
           headers: {

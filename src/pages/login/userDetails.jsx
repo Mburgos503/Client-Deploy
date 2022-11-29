@@ -8,7 +8,7 @@ export default class UserDetails extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:3500/userData", {
+    fetch("https://api-deploy-production.up.railway.app/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
